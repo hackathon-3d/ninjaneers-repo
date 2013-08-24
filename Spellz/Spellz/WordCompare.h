@@ -8,8 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+@class FliteTTS;
+
 @interface WordCompare : NSObject
 
 @property NSString *wordToSpell;
+@property FliteTTS *fliteEngine;
 
 @end
