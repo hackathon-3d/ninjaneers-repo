@@ -26,6 +26,7 @@
         NSUInteger randomIndex = arc4random() % [dictionaryOfWords count];
         NSString *randomWord = [dictionaryOfWords objectAtIndex:randomIndex];
         NSLog(@"randomWord %@", randomWord);
+        delegate.currentWord = randomWord;
         return randomWord;
     } else {
         return nil;

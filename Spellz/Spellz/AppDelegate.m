@@ -37,17 +37,17 @@
     
     ProfileModel *adam = [[ProfileModel alloc] init];
     adam.name = @"Adam";
-    adam.totalPoints = (NSInteger*)36;
+    adam.totalPoints = (NSInteger)36;
     [_listOfProfiles addObject:adam];
     
     ProfileModel *calvin = [[ProfileModel alloc] init];
     calvin.name = @"Calvin";
-    calvin.totalPoints = (NSInteger*)33;
+    calvin.totalPoints = (NSInteger)33;
     [_listOfProfiles addObject:calvin];
     
     ProfileModel *thomas = [[ProfileModel alloc] init];
     thomas.name = @"Thomas";
-    thomas.totalPoints = (NSInteger*)30;
+    thomas.totalPoints = (NSInteger)30;
     [_listOfProfiles addObject:thomas];
     //end init listOfProfile
     
