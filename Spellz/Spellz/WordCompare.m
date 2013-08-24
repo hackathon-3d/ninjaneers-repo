@@ -22,14 +22,16 @@
 - (NSString *)getWordToSpell
 {
     NSLog(@"getWordToSpell");
-    
     AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-    
     NSMutableArray *dictionaryOfWords = delegate.dictionaryOfWords;
-    NSUInteger randomIndex = arc4random() % [dictionaryOfWords count];
-    NSString *randomWord = [dictionaryOfWords objectAtIndex:randomIndex];
-    NSLog(@"randomWord %@", randomWord);
-    return randomWord;
+    if (dictionaryOfWords) {
+        NSUInteger randomIndex = arc4random() % [dictionaryOfWords count];
+        NSString *randomWord = [dictionaryOfWords objectAtIndex:randomIndex];
+        NSLog(@"randomWord %@", randomWord);
+        return randomWord;
+    } else {
+        return nil;
+    }
 }
 
 - (BOOL)compareInputToWord:(NSString*)attemptedSpelling{
@@ -44,7 +46,9 @@
     return 0;
 }
 
-- (NSInteger*)addPointsToTotalPoints
+- (NSInteger *)addWord:(NSString *)word
+            withPoints:(NSString *)points
+        toProfileModel:(ProfileModel *)profileModel
 {
     NSLog(@"addPointsToTotalPoints");
     return 0;

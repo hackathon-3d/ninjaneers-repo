@@ -13,7 +13,6 @@
 
 - (ProfileModel *)createProfile:(NSString *)name;
 - (void)removeProfile:(NSString *)name;
-
-
+- (void)setCurrentProfile:(ProfileModel *)profileModel;
 
 @end

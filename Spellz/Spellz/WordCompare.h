@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ProfileModel.h"
 
 @interface WordCompare : NSObject
 
@@ -14,6 +15,8 @@
 
 - (NSString *) getWordToSpell;
 - (NSInteger *)incrementCount;
-- (NSInteger *)addPointsToTotalPoints;
+- (NSInteger *)addWord:(NSString *)word
+            withPoints:(NSString *)points
+        toProfileModel:(ProfileModel *)profileModel;
 
 @end
