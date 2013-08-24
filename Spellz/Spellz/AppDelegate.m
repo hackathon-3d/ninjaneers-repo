@@ -18,7 +18,9 @@
     _dictionaryOfWords = [[NSMutableArray alloc] init];
     
     //get list of words
-    NSString *allTheWords = [NSString stringWithContentsOfFile: @"/usr/share/dict/words"
+    NSString* path = [[NSBundle mainBundle] pathForResource:@"wordList" ofType:@"txt"];
+
+    NSString *allTheWords = [NSString stringWithContentsOfFile: path
                                                       encoding: NSUTF8StringEncoding
                                                          error: nil];
     //loop over and add to array

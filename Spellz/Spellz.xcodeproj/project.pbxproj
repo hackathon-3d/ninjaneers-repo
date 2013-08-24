@@ -178,7 +178,6 @@
 		872ABED017C8447C0028C75D /* Spellz */ = {
 			isa = PBXGroup;
 			children = (
-				76ACAC0217C8DA2C009B05E0 /* wordList.txt */,
 				872ABED917C8447C0028C75D /* AppDelegate.h */,
 				872ABEDA17C8447C0028C75D /* AppDelegate.m */,
 				872ABEE217C8447C0028C75D /* MainStoryboard_iPhone.storyboard */,
@@ -191,6 +190,7 @@
 				636AD7BE17C8D20C00A19520 /* ProfileManager.m */,
 				76ACABFF17C85FE4009B05E0 /* WordCompare.h */,
 				76ACAC0017C85FE4009B05E0 /* WordCompare.m */,
+				76ACAC0217C8DA2C009B05E0 /* wordList.txt */,
 				636AD79D17C88B0500A19520 /* Framework */,
 				872ABED117C8447C0028C75D /* Supporting Files */,
 			);

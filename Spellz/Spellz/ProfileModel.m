@@ -20,5 +20,4 @@
     [wordsSpelled  setValue:attempt forKey:word];
 }
 
-
 @end
