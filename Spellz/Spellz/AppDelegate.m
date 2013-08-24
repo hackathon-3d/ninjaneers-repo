@@ -51,6 +51,7 @@
     [_listOfProfiles addObject:thomas];
     //end init listOfProfile
     
+    
     return YES;
 }
 							
