@@ -27,21 +27,19 @@
     name = newName;
 }
 
-- (BOOL)removeProfile:(NSString*)removedName
+- (void)removeProfile:(NSString*)removedName
 {
     NSLog(@"removeProfile %@", removedName);
-//    if (condition) {
-//        <#statements-if-true#>
-//    } else {
-//        <#statements-if-false#>
-//    }
-    return NULL;
+    //just a place holder
+    name = @"";
 }
 
-- (BOOL)addSpelledWord:(NSString*)spelledWord
+- (void)addWordPoints:(NSString*)newWord:(NSString*)pointsValue
 {
-    NSLog(@"addSpelledWord");
-    return NULL;
+    NSLog(@"addSpelledWord %@ %@", newWord, pointsValue);
+    [wordsSpelled  setValue:pointsValue forKey:newWord];
+    //Add spelled word and points to dictionary
+//    wordsSpelled ;
 }
 
 
