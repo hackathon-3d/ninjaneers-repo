@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ProfileModel.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) NSMutableArray *dictionaryOfWords;
-@property (strong, nonatomic) NSMutableArray *defaultProfiles;
+@property (strong, nonatomic) NSMutableArray *listOfProfiles;
+@property (strong, nonatomic) ProfileModel *currentProfile;
 
 @end
