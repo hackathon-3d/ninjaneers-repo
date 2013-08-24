@@ -15,26 +15,20 @@
 @synthesize wordsSpelled;
 
 
-- (NSArray*)listProfiles
-{
-    NSLog(@"listProfile");
-    return NULL;
-}
-
-- (void)addProfile:(NSString*)newName
+- (void)addProfileName:(NSString*)newName
 {
     NSLog(@"addProfile %@", newName);
     name = newName;
 }
 
-- (void)removeProfile:(NSString*)removedName
+- (void)removeProfileName:(NSString*)removedName
 {
     NSLog(@"removeProfile %@", removedName);
     //just a place holder
     name = @"";
 }
 
-- (void)addWordPoints:(NSString*)newWord:(NSString*)pointsValue
+- (void)addWordAndPoints:(NSString*)newWord :(NSString*)pointsValue
 {
     NSLog(@"addSpelledWord %@ %@", newWord, pointsValue);
     [wordsSpelled  setValue:pointsValue forKey:newWord];
