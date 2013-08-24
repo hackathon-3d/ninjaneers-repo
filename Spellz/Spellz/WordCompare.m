@@ -7,20 +7,38 @@
 //
 
 #import "WordCompare.h"
+#import "AppDelegate.h"
 
 @interface WordCompare ()
+
+
 @end
 
 @implementation WordCompare
 
 @synthesize wordToSpell;
 
+- (id) init
+{
+    // Call superclass's initializer
+    self = [super init];
+    if( !self ) return nil;
+        
+    return self;
+}
+
 
 - (NSString *)getWordToSpell
 {
     NSLog(@"getWordToSpell");
     
-    return @"Hey Dude spell this word";
+    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    
+    NSMutableArray *dictionaryOfWords = delegate.dictionaryOfWords;
+    NSUInteger randomIndex = arc4random() % [dictionaryOfWords count];
+    NSString *randomWord = [dictionaryOfWords objectAtIndex:randomIndex];
+    NSLog(@"randomWord %@", randomWord);
+    return randomWord;
 }
 
 - (BOOL)compareInputToWord:(NSString*)attemptedSpelling{
