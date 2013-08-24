@@ -12,6 +12,6 @@
 
 @property NSString *name;
 @property NSString *totalPoints;
-@property NSDictionary *wordsSpelled;
+@property NSMutableDictionary *wordsSpelled;
 
 @end
