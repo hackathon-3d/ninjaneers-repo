@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Ninjaneer. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "LandingViewController.h"
 #import "WordCompare.h"
 #import "AppDelegate.h"
 
