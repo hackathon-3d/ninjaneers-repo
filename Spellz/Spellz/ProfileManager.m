@@ -21,7 +21,7 @@
     newProfile.wordsSpelled = [[NSMutableDictionary alloc] init];
     
     AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-    [delegate.defaultProfiles addObject:newProfile];
+    [delegate.listOfProfiles addObject:newProfile];
     return newProfile;
 }
 
@@ -29,7 +29,7 @@
 {
     NSLog(@"removeProfile %@", name);
     AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-    NSMutableArray *profiles = delegate.defaultProfiles;
+    NSMutableArray *profiles = delegate.listOfProfiles;
     for (int i=0; i<profiles.count; i++) {
         if ([[profiles objectAtIndex:i] name] == name) {
             [profiles removeObjectAtIndex:i];
