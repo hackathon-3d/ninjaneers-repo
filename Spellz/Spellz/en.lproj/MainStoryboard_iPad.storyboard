@@ -65,7 +65,7 @@
                                     <constraint firstAttribute="width" constant="592" id="B1L-sp-FeW"/>
                                     <constraint firstAttribute="height" constant="81" id="WVP-54-yJe"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
