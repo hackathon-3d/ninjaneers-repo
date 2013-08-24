@@ -10,4 +10,35 @@
 
 @implementation WordCompare
 
+@synthesize wordToSpell;
+
+
+- (NSString*)getWordToSpell
+{
+    NSLog(@"getWordToSpell");
+    return NULL;
+}
+
+- (void)readWord
+{
+    NSLog(@"readWord");
+}
+
+- (BOOL)compareInputToWord:(NSString*)attemptedSpelling{
+    NSLOG(@"compareInputToWord %@", attemptedSpelling);
+    return[wordToSpell isEqualToString:attemptedSpelling];
+}
+
+- (NSInteger)incrementCount
+{
+    NSLog(@"incrementCount");
+    return NULL;
+}
+
+- (NSInteger)addPointsToTotalPoints
+{
+    NSLog(@"addPointsToTotalPoints");
+    return NULL;
+}
+
 @end
