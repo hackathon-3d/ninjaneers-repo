@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ProfileModel.h"
 
 @implementation AppDelegate
 
@@ -26,6 +27,28 @@
             [_dictionaryOfWords addObject:line];
         }
     }
+    //end init listOFWords
+    
+    //-----------------------------------------------------------------------------
+    
+    //init listOfDefaultProfiles
+    _defaultProfiles = [[NSMutableArray alloc] init];
+    
+    ProfileModel *adam = [[ProfileModel alloc] init];
+    adam.name = @"Adam";
+    adam.totalPoints = (NSInteger*)36;
+    [_defaultProfiles addObject:adam];
+    
+    ProfileModel *calvin = [[ProfileModel alloc] init];
+    calvin.name = @"Calvin";
+    calvin.totalPoints = (NSInteger*)33;
+    [_defaultProfiles addObject:calvin];
+    
+    ProfileModel *thomas = [[ProfileModel alloc] init];
+    thomas.name = @"Thomas";
+    thomas.totalPoints = (NSInteger*)30;
+    [_defaultProfiles addObject:thomas];
+    //end init listOfProfile
     
     return YES;
 }
