@@ -60,7 +60,7 @@
                                     <constraint firstAttribute="height" constant="896" id="BFw-ke-6Vo"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="03Y-Hi-KjW">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="03Y-Hi-KjW">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="592" id="B1L-sp-FeW"/>
                                     <constraint firstAttribute="height" constant="81" id="WVP-54-yJe"/>
@@ -80,6 +80,9 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="textInput" destination="03Y-Hi-KjW" id="vOM-fD-15T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jwi-P3-gZ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -99,6 +102,12 @@
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="textInput" candidateClass="UITextField"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
