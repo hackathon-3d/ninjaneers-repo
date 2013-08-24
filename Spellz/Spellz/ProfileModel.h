@@ -11,5 +11,7 @@
 @interface ProfileModel : NSObject
 
 @property NSString *name;
+@property NSString *totalPoints;
+@property NSDictionary *wordsSpelled;
 
 @end
