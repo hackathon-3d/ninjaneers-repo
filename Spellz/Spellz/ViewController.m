@@ -22,7 +22,7 @@
     
     //wordCompare = [[WordCompare alloc] init];
     
-    [WordCompare speak];
+//    [WordCompare speak];
     
 }
 
