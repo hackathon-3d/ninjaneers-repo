@@ -15,12 +15,6 @@
 @synthesize wordsSpelled;
 
 
-- (NSArray*)listProfiles
-{
-    NSLog(@"listProfile");
-    return NULL;
-}
-
 - (void)addProfile:(NSString*)newName
 {
     NSLog(@"addProfile %@", newName);
@@ -34,7 +28,7 @@
     name = @"";
 }
 
-- (void)addWord:(NSString*)newWord withPoints:(NSString*)pointValue
+- (void)addWord:(NSString *)newWord withPoints:(NSString *)pointValue
 {
     NSLog(@"addSpelledWord %@ %@", newWord, pointValue);
     [wordsSpelled  setValue:pointValue forKey:newWord];
