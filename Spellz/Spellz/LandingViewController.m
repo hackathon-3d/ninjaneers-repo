@@ -12,8 +12,6 @@
 
 @interface UIViewController ()
 
-@property (weak, nonatomic) IBOutlet UITextField *textInput;
-
 @end
 
 @implementation LandingViewController

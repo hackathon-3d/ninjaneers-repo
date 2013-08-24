@@ -10,9 +10,15 @@
 
 @interface GameViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *iPut;
+
 @end
 
 @implementation GameViewController
+- (IBAction)listenButton:(id)sender {
+}
+- (IBAction)spellButton:(id)sender {
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
