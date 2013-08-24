@@ -15,21 +15,33 @@
 
 @implementation ViewController
 
+@synthesize fliteController;
+@synthesize slt;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    
-    //wordCompare = [[WordCompare alloc] init];
-    
-//    [WordCompare speak];
-    
+	[self.fliteController say:@"Yea Baby, VOice to text." withVoice:self.slt];    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (FliteController *)fliteController {
+	if (fliteController == nil) {
+		fliteController = [[FliteController alloc] init];
+	}
+	return fliteController;
+}
+
+- (Slt *)slt {
+	if (slt == nil) {
+		slt = [[Slt alloc] init];
+	}
+	return slt;
 }
 
 @end

@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Slt/Slt.h>
+#import <OpenEars/FliteController.h>
 
+FliteController *fliteController;
+Slt *slt;
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) FliteController *fliteController;
+@property (strong, nonatomic) Slt *slt;
 
 @end
