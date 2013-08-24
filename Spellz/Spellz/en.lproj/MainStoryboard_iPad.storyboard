@@ -102,14 +102,26 @@
                                     <action selector="listenButton:" destination="GF7-Fu-gJ3" eventType="touchUpInside" id="QGA-XA-Rts"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHA-8H-ZMZ">
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="242" id="MhI-bp-hYF"/>
+                                    <constraint firstAttribute="height" constant="70" id="soZ-3d-IAA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dsz-MD-FVE" firstAttribute="leading" secondItem="KOQ-CP-L0f" secondAttribute="leading" constant="87" id="7Wa-mI-yJc"/>
+                            <constraint firstAttribute="trailing" secondItem="zHA-8H-ZMZ" secondAttribute="trailing" constant="13" id="CaD-FY-W31"/>
                             <constraint firstItem="34Z-vG-XmK" firstAttribute="trailing" secondItem="KOQ-CP-L0f" secondAttribute="trailing" type="default" id="Klu-Jh-zXM"/>
                             <constraint firstItem="i02-7T-UJe" firstAttribute="top" secondItem="KOQ-CP-L0f" secondAttribute="top" constant="115" id="Z3e-fz-bpS"/>
                             <constraint firstAttribute="bottom" secondItem="03Y-Hi-KjW" secondAttribute="bottom" constant="107" id="Zg6-Ip-ta8"/>
                             <constraint firstItem="i02-7T-UJe" firstAttribute="leading" secondItem="KOQ-CP-L0f" secondAttribute="leading" constant="150" id="j2M-wa-XkO"/>
+                            <constraint firstItem="zHA-8H-ZMZ" firstAttribute="top" secondItem="KOQ-CP-L0f" secondAttribute="top" constant="5" id="ods-bi-866"/>
                             <constraint firstItem="34Z-vG-XmK" firstAttribute="leading" secondItem="KOQ-CP-L0f" secondAttribute="leading" type="default" id="pHb-UL-bfC"/>
                             <constraint firstItem="03Y-Hi-KjW" firstAttribute="leading" secondItem="KOQ-CP-L0f" secondAttribute="leading" constant="305" id="rDp-UA-1kg"/>
                             <constraint firstAttribute="bottom" secondItem="dsz-MD-FVE" secondAttribute="bottom" constant="157" id="tig-4F-cQO"/>
@@ -120,6 +132,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="iPut" destination="03Y-Hi-KjW" id="sf6-H6-FCn"/>
+                        <outlet property="lblMessage" destination="zHA-8H-ZMZ" id="9zS-zd-sZ1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jwi-P3-gZ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -132,22 +145,6 @@
         <image name="quiz.png" width="2048" height="1536"/>
         <image name="spellz-start.png" width="1024" height="748"/>
     </resources>
-    <classes>
-        <class className="GameViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GameViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="listenButton:"/>
-                <relationship kind="action" name="spellButton:"/>
-                <relationship kind="outlet" name="iPut" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="LandingViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LandingViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
