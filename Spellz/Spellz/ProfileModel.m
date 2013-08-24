@@ -21,15 +21,20 @@
     return NULL;
 }
 
-- (BOOL)addProfile:(NSString*)newName
+- (void)addProfile:(NSString*)newName
 {
     NSLog(@"addProfile %@", newName);
-    return NULL;
+    name = newName;
 }
 
 - (BOOL)removeProfile:(NSString*)removedName
 {
     NSLog(@"removeProfile %@", removedName);
+//    if (condition) {
+//        <#statements-if-true#>
+//    } else {
+//        <#statements-if-false#>
+//    }
     return NULL;
 }
 
