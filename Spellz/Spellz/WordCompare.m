@@ -47,13 +47,13 @@
     return[wordToSpell caseInsensitiveCompare:attemptedSpelling];
 }
 
-- (NSInteger)incrementCount
+- (NSInteger*)incrementCount
 {
     NSLog(@"incrementCount");
     return 0;
 }
 
-- (NSInteger)addPointsToTotalPoints
+- (NSInteger*)addPointsToTotalPoints
 {
     NSLog(@"addPointsToTotalPoints");
     return 0;
