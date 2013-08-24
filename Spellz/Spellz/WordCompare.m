@@ -10,8 +10,6 @@
 #import "AppDelegate.h"
 
 @interface WordCompare ()
-
-
 @end
 
 @implementation WordCompare
@@ -22,32 +20,23 @@
 - (NSString *)getWordToSpell
 {
     NSLog(@"getWordToSpell");
-    
     AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-    
     NSMutableArray *dictionaryOfWords = delegate.dictionaryOfWords;
-    NSUInteger randomIndex = arc4random() % [dictionaryOfWords count];
-    NSString *randomWord = [dictionaryOfWords objectAtIndex:randomIndex];
-    NSLog(@"randomWord %@", randomWord);
-    return randomWord;
+    if (dictionaryOfWords) {
+        NSUInteger randomIndex = arc4random() % [dictionaryOfWords count];
+        NSString *randomWord = [dictionaryOfWords objectAtIndex:randomIndex];
+        NSLog(@"randomWord %@", randomWord);
+        delegate.currentWord = randomWord;
+        return randomWord;
+    } else {
+        return nil;
+    }
 }
 
 - (BOOL)compareInputToWord:(NSString*)attemptedSpelling{
     NSLog(@"compareInputToWord %@", attemptedSpelling);
     //may want to trim whitespace
     return[wordToSpell caseInsensitiveCompare:attemptedSpelling];
-}
-
-- (NSInteger*)incrementCount
-{
-    NSLog(@"incrementCount");
-    return 0;
-}
-
-- (NSInteger*)addPointsToTotalPoints
-{
-    NSLog(@"addPointsToTotalPoints");
-    return 0;
 }
 
 @end

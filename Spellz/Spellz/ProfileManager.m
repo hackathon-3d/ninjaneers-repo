@@ -11,9 +11,9 @@
 
 @implementation ProfileManager
 
-- (ProfileModel *)addProfile:(NSString*)name
+- (ProfileModel *)createProfile:(NSString*)name
 {
-    NSLog(@"addProfile %@", name);
+    NSLog(@"createProfile %@", name);
     
     ProfileModel *newProfile = [[ProfileModel alloc] init];
     newProfile.name = name;
@@ -35,6 +35,12 @@
             [profiles removeObjectAtIndex:i];
         }
     }
+}
+
+- (void)setCurrentProfile:(ProfileModel *)profileModel
+{
+    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    delegate.currentProfile = profileModel;
 }
 
 @end

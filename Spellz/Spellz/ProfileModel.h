@@ -11,9 +11,13 @@
 @interface ProfileModel : NSObject
 
 @property NSString *name;
-@property NSInteger *totalPoints;
+@property NSInteger totalPoints;
 @property NSMutableDictionary *wordsSpelled;
 
-- (void)addWord:(NSString *)word onAttempt:(NSString *)attempt;
+- (void)addWord:(NSString *)word
+      onAttempt:(NSString *)attempt;
+
+- (void)incrementTotalPoints:(NSInteger )points;
+
 
 @end

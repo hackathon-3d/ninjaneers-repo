@@ -20,4 +20,10 @@
     [wordsSpelled  setValue:attempt forKey:word];
 }
 
+- (void)incrementTotalPoints:(NSInteger)points
+{
+    NSLog(@"incrementTotalPoints %d", points);
+    self.totalPoints += points;
+}
+
 @end
