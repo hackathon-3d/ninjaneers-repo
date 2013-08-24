@@ -10,10 +10,10 @@
 #import "WordCompare.h"
 #import "AppDelegate.h"
 
-@interface ViewController ()
+@interface UIViewController ()
 @end
 
-@implementation ViewController
+@implementation LandingViewController
 
 @synthesize fliteController;
 @synthesize slt;
