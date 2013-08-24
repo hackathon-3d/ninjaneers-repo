@@ -10,4 +10,6 @@
 
 @interface ProfileModel : NSObject
 
+@property NSString *name;
+
 @end
