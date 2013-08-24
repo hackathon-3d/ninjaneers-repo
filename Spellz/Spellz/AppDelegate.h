@@ -15,5 +15,6 @@
 @property (strong, nonatomic) NSMutableArray *dictionaryOfWords;
 @property (strong, nonatomic) NSMutableArray *listOfProfiles;
 @property (strong, nonatomic) ProfileModel *currentProfile;
+@property (strong, nonatomic) NSString *currentWord;
 
 @end
