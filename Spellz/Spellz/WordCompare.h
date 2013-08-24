@@ -13,5 +13,7 @@
 @property NSString *wordToSpell;
 
 - (NSString *) getWordToSpell;
+- (NSInteger *)incrementCount;
+- (NSInteger *)addPointsToTotalPoints;
 
 @end

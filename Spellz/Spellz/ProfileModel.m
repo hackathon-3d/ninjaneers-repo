@@ -15,23 +15,25 @@
 @synthesize wordsSpelled;
 
 
-- (void)addProfileName:(NSString*)newName
+- (void)addProfile:(NSString*)newName
 {
     NSLog(@"addProfile %@", newName);
     name = newName;
 }
 
-- (void)removeProfileName:(NSString*)removedName
+- (void)removeProfile:(NSString*)removedName
 {
     NSLog(@"removeProfile %@", removedName);
     //just a place holder
     name = @"";
 }
 
-- (void)addWordAndPoints:(NSString*)newWord :(NSString*)pointsValue
+- (void)addWord:(NSString *)newWord withPoints:(NSString *)pointValue
 {
-    NSLog(@"addSpelledWord %@ %@", newWord, pointsValue);
-    [wordsSpelled  setValue:pointsValue forKey:newWord];
+    NSLog(@"addSpelledWord %@ %@", newWord, pointValue);
+    [wordsSpelled  setValue:pointValue forKey:newWord];
+    //Add spelled word and points to dictionary
+    //wordsSpelled ;
 }
 
 
