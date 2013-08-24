@@ -12,7 +12,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    
+    //init listOfWords
+    _dictionaryOfWords = [[NSMutableArray alloc] init];
+    
+    //get list of words
+    NSString *allTheWords = [NSString stringWithContentsOfFile: @"/usr/share/dict/words"
+                                                      encoding: NSUTF8StringEncoding
+                                                         error: nil];
+    //loop over and add to array
+    for (NSString *line in [allTheWords componentsSeparatedByString:@"\n"]) {
+        if (line.length > 4) {
+            [_dictionaryOfWords addObject:line];
+        }
+    }
+    
     return YES;
 }
 							
