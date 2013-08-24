@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "WordCompare.h"
 
 @interface ViewController ()
-
+@property (weak, nonatomic) WordCompare *wordCompare;
 @end
 
 @implementation ViewController
@@ -18,6 +19,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    //wordCompare = [[WordCompare alloc] init];
+    
+    [WordCompare speak];
+    
 }
 
 - (void)didReceiveMemoryWarning
