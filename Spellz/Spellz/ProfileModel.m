@@ -38,8 +38,6 @@
 {
     NSLog(@"addSpelledWord %@ %@", newWord, pointsValue);
     [wordsSpelled  setValue:pointsValue forKey:newWord];
-    //Add spelled word and points to dictionary
-//    wordsSpelled ;
 }
 
 
