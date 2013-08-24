@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "WordCompare.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
 @end
@@ -20,8 +21,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    NSMutableArray *defaultProfiles = delegate.defaultProfiles;
+    
     WordCompare *wordCompare = [[WordCompare alloc] init];
     NSString *wordToSpeak = wordCompare.getWordToSpell;
+    
     [self.fliteController say:wordToSpeak withVoice:self.slt];	    
 }
 
