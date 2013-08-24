@@ -13,7 +13,7 @@
 FliteController *fliteController;
 Slt *slt;
 
-@interface ViewController : UIViewController
+@interface LandingViewController : UIViewController
 
 @property (strong, nonatomic) FliteController *fliteController;
 @property (strong, nonatomic) Slt *slt;
