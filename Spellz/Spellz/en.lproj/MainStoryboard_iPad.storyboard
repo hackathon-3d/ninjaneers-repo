@@ -68,20 +68,58 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsz-MD-FVE">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="LRg-yB-jG0"/>
+                                    <constraint firstAttribute="width" constant="255" id="cpx-yk-VgX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="SPELL">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="spellButton:" destination="GF7-Fu-gJ3" eventType="touchUpInside" id="Rtf-1C-wo5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i02-7T-UJe">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="6rW-Zz-Hsv"/>
+                                    <constraint firstAttribute="height" constant="117" id="OZN-kJ-Noc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="listenButton:" destination="GF7-Fu-gJ3" eventType="touchUpInside" id="QGA-XA-Rts"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="dsz-MD-FVE" secondAttribute="bottom" constant="144" id="Bhc-6B-pmM"/>
+                            <constraint firstItem="i02-7T-UJe" firstAttribute="top" secondItem="KOQ-CP-L0f" secondAttribute="top" constant="105" id="EyC-PU-6em"/>
                             <constraint firstItem="34Z-vG-XmK" firstAttribute="trailing" secondItem="KOQ-CP-L0f" secondAttribute="trailing" type="default" id="Klu-Jh-zXM"/>
+                            <constraint firstItem="dsz-MD-FVE" firstAttribute="leading" secondItem="KOQ-CP-L0f" secondAttribute="leading" constant="74" id="W8q-N5-GPr"/>
                             <constraint firstAttribute="bottom" secondItem="03Y-Hi-KjW" secondAttribute="bottom" constant="107" id="Zg6-Ip-ta8"/>
                             <constraint firstItem="34Z-vG-XmK" firstAttribute="leading" secondItem="KOQ-CP-L0f" secondAttribute="leading" type="default" id="pHb-UL-bfC"/>
                             <constraint firstItem="03Y-Hi-KjW" firstAttribute="leading" secondItem="KOQ-CP-L0f" secondAttribute="leading" constant="305" id="rDp-UA-1kg"/>
+                            <constraint firstItem="i02-7T-UJe" firstAttribute="leading" secondItem="KOQ-CP-L0f" secondAttribute="leading" constant="141" id="sBy-1m-qbR"/>
                             <constraint firstItem="34Z-vG-XmK" firstAttribute="top" secondItem="KOQ-CP-L0f" secondAttribute="top" constant="-41" id="xcO-4Y-Cpc"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <outlet property="textInput" destination="03Y-Hi-KjW" id="vOM-fD-15T"/>
+                        <outlet property="iPut" destination="03Y-Hi-KjW" id="sf6-H6-FCn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jwi-P3-gZ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -96,18 +134,17 @@
     <classes>
         <class className="GameViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GameViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="listenButton:"/>
+                <relationship kind="action" name="spellButton:"/>
+                <relationship kind="outlet" name="iPut" candidateClass="UITextField"/>
+            </relationships>
         </class>
         <class className="LandingViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LandingViewController.h"/>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="textInput" candidateClass="UITextField"/>
-            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
