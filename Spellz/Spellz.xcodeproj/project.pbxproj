@@ -24,6 +24,7 @@
 		636AD7BA17C88B0500A19520 /* OpenEars2.gram in Resources */ = {isa = PBXBuildFile; fileRef = 636AD7AB17C88B0500A19520 /* OpenEars2.gram */; };
 		636AD7BB17C88B0500A19520 /* OpenEarsCorpus.txt in Resources */ = {isa = PBXBuildFile; fileRef = 636AD7AC17C88B0500A19520 /* OpenEarsCorpus.txt */; };
 		636AD7BC17C88B0500A19520 /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636AD7AD17C88B0500A19520 /* Slt.framework */; };
+		636AD7BF17C8D20C00A19520 /* ProfileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 636AD7BE17C8D20C00A19520 /* ProfileManager.m */; };
 		76ACABFE17C85FC3009B05E0 /* ProfileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 76ACABFD17C85FC3009B05E0 /* ProfileModel.m */; };
 		76ACAC0117C85FE4009B05E0 /* WordCompare.m in Sources */ = {isa = PBXBuildFile; fileRef = 76ACAC0017C85FE4009B05E0 /* WordCompare.m */; };
 		76ACAC0317C8DA2C009B05E0 /* wordList.txt in Resources */ = {isa = PBXBuildFile; fileRef = 76ACAC0217C8DA2C009B05E0 /* wordList.txt */; };
@@ -63,6 +64,8 @@
 		636AD7AB17C88B0500A19520 /* OpenEars2.gram */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEars2.gram; sourceTree = "<group>"; };
 		636AD7AC17C88B0500A19520 /* OpenEarsCorpus.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEarsCorpus.txt; sourceTree = "<group>"; };
 		636AD7AD17C88B0500A19520 /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
+		636AD7BD17C8D20C00A19520 /* ProfileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileManager.h; sourceTree = "<group>"; };
+		636AD7BE17C8D20C00A19520 /* ProfileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileManager.m; sourceTree = "<group>"; };
 		76ACABFC17C85FC3009B05E0 /* ProfileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileModel.h; sourceTree = "<group>"; };
 		76ACABFD17C85FC3009B05E0 /* ProfileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileModel.m; sourceTree = "<group>"; };
 		76ACABFF17C85FE4009B05E0 /* WordCompare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordCompare.h; sourceTree = "<group>"; };
@@ -184,6 +187,8 @@
 				872ABEE917C8447C0028C75D /* ViewController.m */,
 				76ACABFC17C85FC3009B05E0 /* ProfileModel.h */,
 				76ACABFD17C85FC3009B05E0 /* ProfileModel.m */,
+				636AD7BD17C8D20C00A19520 /* ProfileManager.h */,
+				636AD7BE17C8D20C00A19520 /* ProfileManager.m */,
 				76ACABFF17C85FE4009B05E0 /* WordCompare.h */,
 				76ACAC0017C85FE4009B05E0 /* WordCompare.m */,
 				636AD79D17C88B0500A19520 /* Framework */,
@@ -296,6 +301,7 @@
 				872ABEEA17C8447C0028C75D /* ViewController.m in Sources */,
 				76ACABFE17C85FC3009B05E0 /* ProfileModel.m in Sources */,
 				76ACAC0117C85FE4009B05E0 /* WordCompare.m in Sources */,
+				636AD7BF17C8D20C00A19520 /* ProfileManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
