@@ -33,10 +33,10 @@
     }
 }
 
-- (BOOL)compareInputToWord:(NSString*)attemptedSpelling{
-    NSLog(@"compareInputToWord %@", attemptedSpelling);
+- (BOOL)compareInput:(NSString*)input toWord:(NSString*)word {
+    NSLog(@"compareInputToWord %@", word);
     //may want to trim whitespace
-    return[wordToSpell caseInsensitiveCompare:attemptedSpelling];
+    return[word caseInsensitiveCompare:input];
 }
 
 @end

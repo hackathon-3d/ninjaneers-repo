@@ -14,5 +14,6 @@
 @property NSString *wordToSpell;
 
 - (NSString *) getWordToSpell;
+- (BOOL)compareInput:(NSString*)input toWord:(NSString*)word;
 
 @end

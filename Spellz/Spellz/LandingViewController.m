@@ -7,7 +7,6 @@
 //
 
 #import "LandingViewController.h"
-#import "WordCompare.h"
 #import "AppDelegate.h"
 
 @interface UIViewController ()
@@ -16,9 +15,6 @@
 
 @implementation LandingViewController
 
-@synthesize fliteController;
-@synthesize slt;
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -26,10 +22,6 @@
     AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     NSMutableArray *listOfProfiles = delegate.listOfProfiles;
     
-    WordCompare *wordCompare = [[WordCompare alloc] init];
-    NSString *wordToSpeak = wordCompare.getWordToSpell;
-    
-    [self.fliteController say:wordToSpeak withVoice:self.slt];	    
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,21 +30,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-
-
-- (FliteController *)fliteController {
-	if (fliteController == nil) {
-		fliteController = [[FliteController alloc] init];
-	}
-	return fliteController;
-}
-
-- (Slt *)slt {
-	if (slt == nil) {
-		slt = [[Slt alloc] init];
-	}
-	return slt;
-}
 
 @end
