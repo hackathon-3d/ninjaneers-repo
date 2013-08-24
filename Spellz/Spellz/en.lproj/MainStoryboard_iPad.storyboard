@@ -66,8 +66,8 @@
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="03Y-Hi-KjW">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="592" id="B1L-sp-FeW"/>
                                     <constraint firstAttribute="height" constant="81" id="WVP-54-yJe"/>
+                                    <constraint firstAttribute="width" constant="571" id="a35-HA-ig5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
@@ -119,16 +119,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="dsz-MD-FVE" firstAttribute="leading" secondItem="KOQ-CP-L0f" secondAttribute="leading" constant="87" id="7Wa-mI-yJc"/>
                             <constraint firstAttribute="trailing" secondItem="zHA-8H-ZMZ" secondAttribute="trailing" constant="13" id="CaD-FY-W31"/>
+                            <constraint firstAttribute="trailing" secondItem="dsz-MD-FVE" secondAttribute="trailing" constant="109" id="GcA-gR-hAR"/>
+                            <constraint firstItem="03Y-Hi-KjW" firstAttribute="top" secondItem="KOQ-CP-L0f" secondAttribute="top" constant="153" id="KSr-HM-Wjy"/>
                             <constraint firstItem="34Z-vG-XmK" firstAttribute="trailing" secondItem="KOQ-CP-L0f" secondAttribute="trailing" type="default" id="Klu-Jh-zXM"/>
-                            <constraint firstItem="03Y-Hi-KjW" firstAttribute="leading" secondItem="KOQ-CP-L0f" secondAttribute="leading" constant="331" id="Ybc-uI-tcL"/>
-                            <constraint firstItem="i02-7T-UJe" firstAttribute="top" secondItem="KOQ-CP-L0f" secondAttribute="top" constant="115" id="Z3e-fz-bpS"/>
-                            <constraint firstAttribute="bottom" secondItem="03Y-Hi-KjW" secondAttribute="bottom" constant="107" id="Zg6-Ip-ta8"/>
+                            <constraint firstItem="i02-7T-UJe" firstAttribute="top" secondItem="KOQ-CP-L0f" secondAttribute="top" constant="94" id="RBC-0M-FwY"/>
+                            <constraint firstItem="03Y-Hi-KjW" firstAttribute="leading" secondItem="KOQ-CP-L0f" secondAttribute="leading" constant="423" id="YKx-iy-Kgr"/>
+                            <constraint firstItem="dsz-MD-FVE" firstAttribute="top" secondItem="KOQ-CP-L0f" secondAttribute="top" constant="277" id="iig-KX-KF9"/>
                             <constraint firstItem="i02-7T-UJe" firstAttribute="leading" secondItem="KOQ-CP-L0f" secondAttribute="leading" constant="150" id="j2M-wa-XkO"/>
                             <constraint firstItem="zHA-8H-ZMZ" firstAttribute="top" secondItem="KOQ-CP-L0f" secondAttribute="top" constant="5" id="ods-bi-866"/>
                             <constraint firstItem="34Z-vG-XmK" firstAttribute="leading" secondItem="KOQ-CP-L0f" secondAttribute="leading" type="default" id="pHb-UL-bfC"/>
-                            <constraint firstAttribute="bottom" secondItem="dsz-MD-FVE" secondAttribute="bottom" constant="157" id="tig-4F-cQO"/>
                             <constraint firstItem="34Z-vG-XmK" firstAttribute="top" secondItem="KOQ-CP-L0f" secondAttribute="top" constant="-41" id="xcO-4Y-Cpc"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -147,7 +147,7 @@
     <resources>
         <image name="Default@2x.png" width="640" height="960"/>
         <image name="playbtn.png" width="886" height="194"/>
-        <image name="quiz.png" width="2048" height="1536"/>
+        <image name="quiz.png" width="2048" height="1496"/>
         <image name="spellz-start.png" width="1024" height="748"/>
     </resources>
     <classes>
