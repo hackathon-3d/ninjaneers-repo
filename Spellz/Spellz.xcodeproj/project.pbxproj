@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76ACABFE17C85FC3009B05E0 /* ProfileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 76ACABFD17C85FC3009B05E0 /* ProfileModel.m */; };
+		76ACAC0117C85FE4009B05E0 /* WordCompare.m in Sources */ = {isa = PBXBuildFile; fileRef = 76ACAC0017C85FE4009B05E0 /* WordCompare.m */; };
 		872ABECB17C8447C0028C75D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 872ABECA17C8447C0028C75D /* UIKit.framework */; };
 		872ABECD17C8447C0028C75D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 872ABECC17C8447C0028C75D /* Foundation.framework */; };
 		872ABECF17C8447C0028C75D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 872ABECE17C8447C0028C75D /* CoreGraphics.framework */; };
@@ -22,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76ACABFC17C85FC3009B05E0 /* ProfileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileModel.h; sourceTree = "<group>"; };
+		76ACABFD17C85FC3009B05E0 /* ProfileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileModel.m; sourceTree = "<group>"; };
+		76ACABFF17C85FE4009B05E0 /* WordCompare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordCompare.h; sourceTree = "<group>"; };
+		76ACAC0017C85FE4009B05E0 /* WordCompare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordCompare.m; sourceTree = "<group>"; };
 		872ABEC717C8447C0028C75D /* Spellz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spellz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		872ABECA17C8447C0028C75D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		872ABECC17C8447C0028C75D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -92,6 +98,10 @@
 				872ABEE817C8447C0028C75D /* ViewController.h */,
 				872ABEE917C8447C0028C75D /* ViewController.m */,
 				872ABED117C8447C0028C75D /* Supporting Files */,
+				76ACABFC17C85FC3009B05E0 /* ProfileModel.h */,
+				76ACABFD17C85FC3009B05E0 /* ProfileModel.m */,
+				76ACABFF17C85FE4009B05E0 /* WordCompare.h */,
+				76ACAC0017C85FE4009B05E0 /* WordCompare.m */,
 			);
 			path = Spellz;
 			sourceTree = "<group>";
@@ -180,6 +190,8 @@
 				872ABED717C8447C0028C75D /* main.m in Sources */,
 				872ABEDB17C8447C0028C75D /* AppDelegate.m in Sources */,
 				872ABEEA17C8447C0028C75D /* ViewController.m in Sources */,
+				76ACABFE17C85FC3009B05E0 /* ProfileModel.m in Sources */,
+				76ACAC0117C85FE4009B05E0 /* WordCompare.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +324,7 @@
 				872ABEEF17C8447C0028C75D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
