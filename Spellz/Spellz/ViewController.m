@@ -23,7 +23,7 @@
     [super viewDidLoad];
     
     AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-    NSMutableArray *defaultProfiles = delegate.defaultProfiles;
+    NSMutableArray *listOfProfiles = delegate.listOfProfiles;
     
     WordCompare *wordCompare = [[WordCompare alloc] init];
     NSString *wordToSpeak = wordCompare.getWordToSpell;
