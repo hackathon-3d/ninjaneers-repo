@@ -34,12 +34,12 @@
     name = @"";
 }
 
-- (void)addWordPoints:(NSString*)newWord:(NSString*)pointsValue
+- (void)addWord:(NSString*)newWord withPoints:(NSString*)pointValue
 {
-    NSLog(@"addSpelledWord %@ %@", newWord, pointsValue);
-    [wordsSpelled  setValue:pointsValue forKey:newWord];
+    NSLog(@"addSpelledWord %@ %@", newWord, pointValue);
+    [wordsSpelled  setValue:pointValue forKey:newWord];
     //Add spelled word and points to dictionary
-//    wordsSpelled ;
+    //wordsSpelled ;
 }
 
 
