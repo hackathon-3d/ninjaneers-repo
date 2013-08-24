@@ -15,7 +15,6 @@
 @synthesize wordsSpelled;
 
 
-
 - (NSArray*)listProfiles
 {
     NSLog(@"listProfile");

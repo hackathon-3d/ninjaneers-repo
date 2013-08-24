@@ -16,6 +16,7 @@
 - (NSString*)getWordToSpell
 {
     NSLog(@"getWordToSpell");
+    
     return NULL;
 }
 
@@ -25,8 +26,9 @@
 }
 
 - (BOOL)compareInputToWord:(NSString*)attemptedSpelling{
-    NSLOG(@"compareInputToWord %@", attemptedSpelling);
-    return[wordToSpell isEqualToString:attemptedSpelling];
+    NSLog(@"compareInputToWord %@", attemptedSpelling);
+    //may want to trim whitespace
+    return[wordToSpell caseInsensitiveCompare:attemptedSpelling];
 }
 
 - (NSInteger)incrementCount
