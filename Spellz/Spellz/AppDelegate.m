@@ -13,7 +13,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
+    //-----------------------------------------------------------------------------
     //init listOfWords
     _dictionaryOfWords = [[NSMutableArray alloc] init];
     
@@ -30,24 +30,23 @@
     //end init listOFWords
     
     //-----------------------------------------------------------------------------
-    
     //init listOfDefaultProfiles
-    _defaultProfiles = [[NSMutableArray alloc] init];
+    _listOfProfiles = [[NSMutableArray alloc] init];
     
     ProfileModel *adam = [[ProfileModel alloc] init];
     adam.name = @"Adam";
     adam.totalPoints = (NSInteger*)36;
-    [_defaultProfiles addObject:adam];
+    [_listOfProfiles addObject:adam];
     
     ProfileModel *calvin = [[ProfileModel alloc] init];
     calvin.name = @"Calvin";
     calvin.totalPoints = (NSInteger*)33;
-    [_defaultProfiles addObject:calvin];
+    [_listOfProfiles addObject:calvin];
     
     ProfileModel *thomas = [[ProfileModel alloc] init];
     thomas.name = @"Thomas";
     thomas.totalPoints = (NSInteger*)30;
-    [_defaultProfiles addObject:thomas];
+    [_listOfProfiles addObject:thomas];
     //end init listOfProfile
     
     return YES;
