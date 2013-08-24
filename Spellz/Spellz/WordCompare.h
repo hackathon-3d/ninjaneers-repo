@@ -10,4 +10,6 @@
 
 @interface WordCompare : NSObject
 
+@property NSString *wordToSpell;
+
 @end
