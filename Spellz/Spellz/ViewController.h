@@ -14,8 +14,6 @@ FliteController *fliteController;
 Slt *slt;
 
 @interface ViewController : UIViewController
-
 @property (strong, nonatomic) FliteController *fliteController;
 @property (strong, nonatomic) Slt *slt;
-
 @end

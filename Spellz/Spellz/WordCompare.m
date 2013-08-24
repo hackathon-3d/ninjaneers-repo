@@ -9,7 +9,6 @@
 #import "WordCompare.h"
 
 @interface WordCompare ()
-- (void) speak:(id)sender;
 @end
 
 @implementation WordCompare
@@ -17,16 +16,11 @@
 @synthesize wordToSpell;
 
 
-- (NSString*)getWordToSpell
+- (NSString *)getWordToSpell
 {
     NSLog(@"getWordToSpell");
     
-    return NULL;
-}
-
-- (void)readWord
-{
-    NSLog(@"readWord");
+    return @"Hey Dude spell this word";
 }
 
 - (BOOL)compareInputToWord:(NSString*)attemptedSpelling{
@@ -38,14 +32,14 @@
 - (NSInteger)incrementCount
 {
     NSLog(@"incrementCount");
-    return NULL;
+    return 0;
 }
 
 - (NSInteger)addPointsToTotalPoints
 {
     NSLog(@"addPointsToTotalPoints");
-    return NULL;
+    return 0;
 }
-    
+
 @end
 

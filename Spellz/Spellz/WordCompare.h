@@ -12,4 +12,6 @@
 
 @property NSString *wordToSpell;
 
+- (NSString *) getWordToSpell;
+
 @end

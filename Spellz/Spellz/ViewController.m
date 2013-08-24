@@ -10,7 +10,6 @@
 #import "WordCompare.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) WordCompare *wordCompare;
 @end
 
 @implementation ViewController
@@ -21,7 +20,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	[self.fliteController say:@"Yea Baby, VOice to text." withVoice:self.slt];    
+    WordCompare *wordCompare = [[WordCompare alloc] init];
+    NSString *wordToSpeak = wordCompare.getWordToSpell;
+    [self.fliteController say:wordToSpeak withVoice:self.slt];	    
 }
 
 - (void)didReceiveMemoryWarning
@@ -29,6 +30,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 - (FliteController *)fliteController {
 	if (fliteController == nil) {
