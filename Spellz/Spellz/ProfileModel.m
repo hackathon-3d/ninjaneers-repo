@@ -14,26 +14,10 @@
 @synthesize totalPoints;
 @synthesize wordsSpelled;
 
-
-- (void)addProfile:(NSString*)newName
+- (void)addWord:(NSString *)word onAttempt:(NSString *)attempt
 {
-    NSLog(@"addProfile %@", newName);
-    name = newName;
-}
-
-- (void)removeProfile:(NSString*)removedName
-{
-    NSLog(@"removeProfile %@", removedName);
-    //just a place holder
-    name = @"";
-}
-
-- (void)addWord:(NSString *)newWord withPoints:(NSString *)pointValue
-{
-    NSLog(@"addSpelledWord %@ %@", newWord, pointValue);
-    [wordsSpelled  setValue:pointValue forKey:newWord];
-    //Add spelled word and points to dictionary
-    //wordsSpelled ;
+    NSLog(@"addWord onAttempt %@ %@", word, attempt);
+    [wordsSpelled  setValue:attempt forKey:word];
 }
 
 

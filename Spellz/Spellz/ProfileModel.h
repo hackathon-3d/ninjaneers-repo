@@ -14,8 +14,6 @@
 @property NSInteger *totalPoints;
 @property NSMutableDictionary *wordsSpelled;
 
-- (void)addProfile:(NSString*)newName;
-- (void)removeProfile:(NSString*)removedName;
-- (void)addWord:(NSString *)newWord withPoints:(NSString *)pointValue;
+- (void)addWord:(NSString *)word onAttempt:(NSString *)attempt;
 
 @end
