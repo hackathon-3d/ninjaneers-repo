@@ -26,6 +26,7 @@
 		636AD7BC17C88B0500A19520 /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636AD7AD17C88B0500A19520 /* Slt.framework */; };
 		76ACABFE17C85FC3009B05E0 /* ProfileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 76ACABFD17C85FC3009B05E0 /* ProfileModel.m */; };
 		76ACAC0117C85FE4009B05E0 /* WordCompare.m in Sources */ = {isa = PBXBuildFile; fileRef = 76ACAC0017C85FE4009B05E0 /* WordCompare.m */; };
+		76ACAC0317C8DA2C009B05E0 /* wordList.txt in Resources */ = {isa = PBXBuildFile; fileRef = 76ACAC0217C8DA2C009B05E0 /* wordList.txt */; };
 		872ABECB17C8447C0028C75D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 872ABECA17C8447C0028C75D /* UIKit.framework */; };
 		872ABECD17C8447C0028C75D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 872ABECC17C8447C0028C75D /* Foundation.framework */; };
 		872ABECF17C8447C0028C75D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 872ABECE17C8447C0028C75D /* CoreGraphics.framework */; };
@@ -66,6 +67,7 @@
 		76ACABFD17C85FC3009B05E0 /* ProfileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileModel.m; sourceTree = "<group>"; };
 		76ACABFF17C85FE4009B05E0 /* WordCompare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordCompare.h; sourceTree = "<group>"; };
 		76ACAC0017C85FE4009B05E0 /* WordCompare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordCompare.m; sourceTree = "<group>"; };
+		76ACAC0217C8DA2C009B05E0 /* wordList.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wordList.txt; sourceTree = "<group>"; };
 		872ABEC717C8447C0028C75D /* Spellz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spellz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		872ABECA17C8447C0028C75D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		872ABECC17C8447C0028C75D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -173,6 +175,7 @@
 		872ABED017C8447C0028C75D /* Spellz */ = {
 			isa = PBXGroup;
 			children = (
+				76ACAC0217C8DA2C009B05E0 /* wordList.txt */,
 				872ABED917C8447C0028C75D /* AppDelegate.h */,
 				872ABEDA17C8447C0028C75D /* AppDelegate.m */,
 				872ABEE217C8447C0028C75D /* MainStoryboard_iPhone.storyboard */,
@@ -277,6 +280,7 @@
 				872ABEF317C8B46C0028C75D /* appIcon@2x.png in Resources */,
 				872ABEF517C8B4DC0028C75D /* Default-Landscape~ipad.png in Resources */,
 				872ABEF717C8B5230028C75D /* Default-Landscape@2x~ipad.png in Resources */,
+				76ACAC0317C8DA2C009B05E0 /* wordList.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
