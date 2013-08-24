@@ -10,8 +10,6 @@
 #import "AppDelegate.h"
 
 @interface WordCompare ()
-
-
 @end
 
 @implementation WordCompare
@@ -38,20 +36,6 @@
     NSLog(@"compareInputToWord %@", attemptedSpelling);
     //may want to trim whitespace
     return[wordToSpell caseInsensitiveCompare:attemptedSpelling];
-}
-
-- (NSInteger*)incrementCount
-{
-    NSLog(@"incrementCount");
-    return 0;
-}
-
-- (NSInteger *)addWord:(NSString *)word
-            withPoints:(NSString *)points
-        toProfileModel:(ProfileModel *)profileModel
-{
-    NSLog(@"addPointsToTotalPoints");
-    return 0;
 }
 
 @end

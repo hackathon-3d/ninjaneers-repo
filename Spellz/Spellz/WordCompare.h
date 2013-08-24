@@ -14,9 +14,5 @@
 @property NSString *wordToSpell;
 
 - (NSString *) getWordToSpell;
-- (NSInteger *)incrementCount;
-- (NSInteger *)addWord:(NSString *)word
-            withPoints:(NSString *)points
-        toProfileModel:(ProfileModel *)profileModel;
 
 @end
