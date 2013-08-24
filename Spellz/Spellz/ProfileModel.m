@@ -10,4 +10,39 @@
 
 @implementation ProfileModel
 
+@synthesize name;
+@synthesize totalPoints;
+@synthesize wordsSpelled;
+
+
+- (NSArray*)listProfiles
+{
+    NSLog(@"listProfile");
+    return NULL;
+}
+
+- (void)addProfile:(NSString*)newName
+{
+    NSLog(@"addProfile %@", newName);
+    name = newName;
+}
+
+- (BOOL)removeProfile:(NSString*)removedName
+{
+    NSLog(@"removeProfile %@", removedName);
+//    if (condition) {
+//        <#statements-if-true#>
+//    } else {
+//        <#statements-if-false#>
+//    }
+    return NULL;
+}
+
+- (BOOL)addSpelledWord:(NSString*)spelledWord
+{
+    NSLog(@"addSpelledWord");
+    return NULL;
+}
+
+
 @end

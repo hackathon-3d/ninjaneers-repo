@@ -15,6 +15,39 @@
 
 @implementation WordCompare
 
+@synthesize wordToSpell;
+
+
+- (NSString*)getWordToSpell
+{
+    NSLog(@"getWordToSpell");
+    
+    return NULL;
+}
+
+- (void)readWord
+{
+    NSLog(@"readWord");
+}
+
+- (BOOL)compareInputToWord:(NSString*)attemptedSpelling{
+    NSLog(@"compareInputToWord %@", attemptedSpelling);
+    //may want to trim whitespace
+    return[wordToSpell caseInsensitiveCompare:attemptedSpelling];
+}
+
+- (NSInteger)incrementCount
+{
+    NSLog(@"incrementCount");
+    return NULL;
+}
+
+- (NSInteger)addPointsToTotalPoints
+{
+    NSLog(@"addPointsToTotalPoints");
+    return NULL;
+}
+    
 - (id)init {
     self = [super init];
     if (self) {

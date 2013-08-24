@@ -12,6 +12,7 @@
 
 @interface WordCompare : NSObject
 
+@property NSString *wordToSpell;
 @property FliteTTS *fliteEngine;
 
 @end
